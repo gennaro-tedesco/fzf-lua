@@ -992,6 +992,8 @@ previewers = {
     includeDeclaration = true,      -- include current declaration in LSP context
     -- settings for 'lsp_{document|workspace|lsp_live_workspace}_symbols'
     symbols = {
+        lsp_query         = ""          -- query passed to vim.lsp.buf.workspace_symbol({query=<lsp_query>}, {opts})
+        query             = ""          -- query passed to the fzf prompt to open the fuzzy search already
         async_or_timeout  = true,       -- symbols are async by default
         symbol_style      = 1,          -- style for document/workspace symbols
                                         -- false: disable,    1: icon+kind
